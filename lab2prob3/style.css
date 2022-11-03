@@ -1,0 +1,10 @@
+div{
+    box-sizing: border-box;
+    border: 10px solid;
+    border-style: solid;
+}
+
+
+body{
+    background-color: aqua;
+}
