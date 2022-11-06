@@ -4,46 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+
+    <title>phone directory</title>
+
 </head>
 <body>
+    <p>Add contact</p>
+    <input class="center" type="text" id="name" placeholder="Enter Name" >
+    <input class="center" type="number" id="mobile" placeholder="Enter Mobile Number">
+    <input class="center" type="text" id="email"  placeholder="Enter Email">
+    <button class="center" type="button" id="button" onclick="enterContact()">Enter Contact Information</button>
+    <div class="center" id="error"></div>
     
-        <div class="search_bar">
-            <input type="text" id="search" placeholder="Search..">
-            <button type="button" onclick="GetInfo()">Search</button>
-        </div>
+    <div class="searchs" id="search">
+        <label >Search by mobile </label>
+        <input type="text" id ="myInput" onkeyup="myFunction()" placeholder="Search for numbers..">
+    </div>  
     
-        <div class="user_profile">
-            User Profile
-        </div>
-        <img id="profile_pic" src="spider.jpeg" alt="spiddy" width="460" height="345">
-    
-        <div class="user_profile" id="Name">
-            Name
-        </div>
-    
-        <div class="user_profile" id="user_Name">
-            User Name
-        </div>
-    
-        <div class="user_profile" id="email">
-            Email
-        </div>
-    
-        <div class="user_profile" id="location">
-            Location
-        </div>
-    
-        <div class="user_profile" id="gists">
-            Number of gists
-        </div>
-    
-        <div id="user_repo">
-            user repos
-        </div>
-    </div>
+    <table class="center" id="phone_dir">
+        <tr>
+            <th onclick="sortTable(0)">Name</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+    </table>
+
+
     
 </body>
 </html>
