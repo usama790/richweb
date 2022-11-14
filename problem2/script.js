@@ -48,14 +48,24 @@ const addBtn = document.getElementById('add')
 
    
   })  
-   deleteBtn.addEventListener('click', () => {  
-     note.remove()  
-     updateLS()  
-   })  
-   editBtn.addEventListener('click', () => {  
+   rxjs.fromEvent(deleteBtn,'click')  
+    .subscribe(() => showCreate()
+
+    
+   )  
+   
+   function showCreate(){
+    note.remove()  
+     
+
+   }
+
+
+   editBtn.addEventListener('click', () => {  f
      main.classList.toggle('hidden')  
      textArea.classList.toggle('hidden')  
    })  
+   
    textArea.addEventListener('input', (e) => {  
      const { value } = e.target  
      main.innerHTML = marked(value)  
