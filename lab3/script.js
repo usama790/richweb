@@ -1,4 +1,3 @@
-
 const addBtn = document.getElementById('add')  
  const notes = JSON.parse(localStorage.getItem('notes'))  
  if(notes) {  
@@ -62,13 +61,14 @@ const addBtn = document.getElementById('add')
    }
 
 
-   rxjs.fromEvent(editBtn,'click' () 
-   .subscribe(() => edit()
+   rxjs.fromEvent(editBtn,'click')  
+    .subscribe(() => edit()
+
+    
+   )  
 
 
-     main.classList.toggle('hidden')  
-     textArea.classList.toggle('hidden')  
-   ) 
+    
 
    function edit(){
 
